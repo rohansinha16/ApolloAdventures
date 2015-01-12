@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Apollo Adventures|Home </title>
+	<link href="css/bootswatch.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/Favicon.ico">
+	<link rel="stylesheet" href="css/animated-bg.css"> <!-- Resource style -->
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="Home.html">
+					<img src="assets/LogoNav.png" alt="" height="40px" padding-top="5px">
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cancun, Mexico<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Cancun/Attractions.html">Attractions</a></li>
+							<li><a href="Cancun/Activities.html">Activities</a></li>
+							<li><a href="Cancun/Planning.html">Planning</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Orlando, USA <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Orlando/Attractions.html">Attractions</a></li>
+							<li><a href="Orlando/Activities.html">Activities</a></li>
+							<li><a href="Orlando/Planning.html">Planning</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Paris, France<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Paris/Attractions.html">Attractions</a></li>
+							<li><a href="Paris/Activities.html">Activities</a></li>
+							<li><a href="Paris/Planning.html">Planning</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sydney, Australia <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Sydney/Attractions.html">Attractions</a></li>
+							<li><a href="Sydney/Activities.html">Activities</a></li>
+							<li><a href="Sydney/Planning.html">Planning</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tokyo, Japan<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="Tokyo/Attractions.html">Attractions</a></li>
+							<li><a href="Tokyo/Activities.html">Activities</a></li>
+							<li><a href="Tokyo/Planning.html">Planning</a></li>
+						</ul>
+					</li>
+				</ul>  
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="large-header-container">
+		<div id="large-header" class="large-header">
+			<canvas id="demo-canvas"></canvas>
+			<div class="main-title" style="height:auto, width:auto;">
+				<img src="assets/Logo.png" style="display: inline-block; width: 75%;"> 
+				<div class="btn-group btn-group-justified" role="group" aria-label="...">
+					<div class="btn-group" role="group" style=>
+						<button type="button" class="btn btn-primary">Cancun, Mexico</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-warning">Orlando, USA</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-success">Paris, France</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-danger">Sydney, Australia</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-info">Tokyo, Japan</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5wGdqrTcgLdOPzMbASsbiHkloxc6v2rE"></script>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+	<script src="js/demo-1.js"></script>
+	<!-- Script for smooth scrolling -->
+	<script>
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+	</script>
+
+</body>
+</html>
