@@ -4658,6 +4658,50 @@ a.badge:focus {
     font-size: 63px;
   }
 }
+.jumbotron-normal {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+.jumbotron-normal h1,
+.jumbotron-normal .h1 {
+  color: inherit;
+}
+.jumbotron-normal p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron-normal > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron-normal,
+.container-fluid .jumbotron-normal {
+  border-radius: 6px;
+}
+.jumbotron-normal .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron-normal {
+    padding: 48px 0;
+  }
+  .container .jumbotron-normal,
+  .container-fluid .jumbotron-normal {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .jumbotron-normal h1,
+  .jumbotron-normal .h1 {
+    font-size: 63px;
+  }
+}
+.thumbnail-container{
+  overflow: hidden;
+  width: 320px;
+}
+
 .thumbnail {
   display: block;
   padding: 4px;
@@ -4666,6 +4710,9 @@ a.badge:focus {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
+  overflow: hidden;
+  height:330px;
+  width:330px;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
