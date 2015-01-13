@@ -11,7 +11,7 @@
 .large-header {
 	position: relative;
 	width: 100%;
-	background-image: url('http://www.hdwallpapers.in/walls/the_sunrise-HD.jpg');
+	background-image: url('../assets/Home.jpg');
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
