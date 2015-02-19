@@ -19,13 +19,6 @@ Primary style
   box-sizing: border-box;
 }
 
-body {
-  font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: rgba(2, 23, 37, 0.7);
-  background-color: white;
-}
 body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
   overflow: hidden;
@@ -45,31 +38,6 @@ b {
 p {
 	font-size: 100%;
 }
-h1 {
-	font-size: 3rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-}
-
-h3 {
-	font-size: 1rem;
-}
-
-h4 {
-	font-size: 0.9rem;
-}
-
-h5 {
-	font-size: 0.8rem;
-}
-
-h6 {
-	font-size: 0.7rem;
-}
-
-
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -513,7 +481,7 @@ The .cd-intro change the background image
 	text-align: center;
 }
 .cd-container h1 {
-	font-family: 'Open Sans', serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 }
 .cd-container h4 {
@@ -902,7 +870,7 @@ About Page Style
 .cd-main-content-services-txt h1 {
 	width: 100%;
 	padding: 40px;
-	font-family: 'Open Sans', serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 }
 .cd-main-content-services-txt p {
